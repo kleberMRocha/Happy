@@ -1,0 +1,15 @@
+*{
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+
+}
+
+body{
+    color: white;
+    color: #ebf2f5;
+}
+
+body,input,button,textarea{
+    font:600 10px Nunito, sans-serif;
+}
