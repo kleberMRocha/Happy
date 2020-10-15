@@ -159,12 +159,14 @@ export default function CreateOrphanage() {
 
               const data = new FormData();
 
+             
+
               data.append('nome',nome);
               data.append('latitude',String(latitude));
               data.append('longitude',String(longitude));
               data.append('about',String(about));
               data.append('instructions',instructions);
-              data.append('open_on_weekends',String(open_on_weekends));
+              data.append('open_on_weekends',String(!!open_on_weekends));
               data.append('opening_hours',opening_hours);
               images.forEach(img =>{
                 data.append('images',img);

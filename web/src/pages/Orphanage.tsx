@@ -53,7 +53,7 @@ export default function Orphanage() {
               return (
                 <button
                   key={image.url}
-                  className={image.url == images ? "active" : ""}
+                  className={image.url === images ? "active" : ""}
                   onClick={() => {
                     setImages(orphanage.images[index].url);
                   }}
