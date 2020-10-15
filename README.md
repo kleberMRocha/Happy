@@ -8,7 +8,6 @@ Projeto desenvolvido durante a Next Level Week, realizada pela @Rocketseat duran
 <img src="https://github.com/kleberMRocha/Happy/blob/master/screenshot/Mapa.png" width="600">
 <img src="https://github.com/kleberMRocha/Happy/blob/master/screenshot/Perfil.png" width="600">
 
-
 # :computer: Tecnologias:
 
 - React
