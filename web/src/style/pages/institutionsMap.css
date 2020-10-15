@@ -2,7 +2,7 @@
     display: flex;
 
 }
-.maps .sidebar{
+.maps .maps-sideBar{
     background: linear-gradient(329.54deg, #15B6D6 0%, #15D6D6 100%);
     max-width: 440px;
     height: 100vh;
@@ -13,13 +13,13 @@
     padding: 5%;
 }
 
-.maps .sidebar h2{
+.maps .maps-sideBar h2{
     font-weight: 800;
     font-size: 40px;
     line-height: 42px;
 }
 
-.maps .sidebar p{
+.maps .maps-sideBar p{
     max-width: 200px;
     font-weight: 600;
     font-size: 14px;
@@ -44,6 +44,40 @@
     width: 100vw;
 }
 
+.map-popup .leaflet-popup-content-wrapper{
+    border-radius: 20px;
+    background-color: #ffffffd0;
+}
+
+.map-popup .leaflet-popup-content{
+    max-width: 230px;
+    color: #0089A5;
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 27px;
+    margin:8px 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.map-popup .leaflet-popup-content a{
+    background-color:#17D6EB;
+    border-radius: 10px;
+    min-height: 40px;
+    min-width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.leaflet-popup-tip-container{
+    display: none;
+  
+  }
+
 .add-institution{
     z-index: 999;
     position: absolute;
@@ -58,6 +92,7 @@
     border-radius: 10px;
     height: 64px;
     width: 64px;
+
 }
 .add-institution:hover{
     background-color:#17D6EB;

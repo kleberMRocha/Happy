@@ -86,3 +86,11 @@ font-weight: 900;
 .enter-app:hover{
     background-color: #96FEFF;
 }
+
+#info{
+   text-align: left;
+   color:#FFD666;
+   font-size: 15px;
+   line-height: 30px;
+   font-weight: 800;
+}

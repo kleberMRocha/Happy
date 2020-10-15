@@ -47,11 +47,11 @@ export default {
         })),
     });
 
-    await schema.validate(data,{
-      abortEarly:false
-    }).catch((err) =>{
+    let validationErros:any = [];
 
-      let validationErros:any = [];
+    await schema.validate(data,{
+      abortEarly:true
+    }).catch((err) =>{
 
       err.errors.forEach((element:string) => {
         validationErros.push({Error:element})
@@ -61,13 +61,18 @@ export default {
 
     });
 
-    const orphanagesRepository = getRepository(Orphanages);
 
-    const orphanage = orphanagesRepository.create(data);
+    if(validationErros.length == 0){
+      const orphanagesRepository = getRepository(Orphanages);
+  
+      const orphanage = orphanagesRepository.create(data);
+  
+      await orphanagesRepository.save(orphanage);
+  
+      return res.status(201).json(orphanage);
+    }
 
-    await orphanagesRepository.save(orphanage);
 
-    return res.status(201).json(orphanage);
   },
   async index(req: Request, res: Response) {
 
