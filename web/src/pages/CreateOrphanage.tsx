@@ -158,9 +158,6 @@ export default function CreateOrphanage() {
             e.preventDefault() 
 
               const data = new FormData();
-
-             
-
               data.append('nome',nome);
               data.append('latitude',String(latitude));
               data.append('longitude',String(longitude));

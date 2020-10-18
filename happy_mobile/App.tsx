@@ -18,6 +18,6 @@ export default function App() {
       return null;
     }
 
-  return(<Routes></Routes>)
+  return(<Routes/>)
 
 }
